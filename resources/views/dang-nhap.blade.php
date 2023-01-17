@@ -41,6 +41,7 @@
         <div class="wthree-form">
             <h2>Điền đầy đủ các thông tin trước khi đăng nhập</h2>
             <form action="{{ route('.handle-Login')}}" method="POST">
+                @csrf
                 <div class="form-sub-w3">
                     <input type="text" name="username" placeholder="Tên đăng nhập " class="@error('username') is-invalid @enderror"/>
                     <div class="icon-w3">
@@ -64,6 +65,9 @@
                     <span>Nhớ mật khẩu</span>
                     <a href="#">Quên mật khẩu</a>
                 </label>
+                @if(session('Error'))
+                <p style="color:red">{{session('Error')}}</p>
+                @endif
                 <div class="clear"></div>
                 <div class="submit-agileits">
                     <input type="submit" value="Đăng nhập">

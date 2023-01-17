@@ -18,9 +18,11 @@ class User extends Authenticatable
         'name',
         'username',
         'email',
+        'phone',
         'password',
         'type',
         'image',
+        'img_avatar',
         'provider',
         'remember_token',//Dùng để ghi nhớ đăng nhập
         'token',//Dùng để xác nhận lại mật khẩu
