@@ -17,16 +17,12 @@
         window.scrollTo(0, 1);
     }
     </script>
-    <!-- Meta tag Keywords -->
-    <!-- css files -->
+
     <link rel="stylesheet" href="Login/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="Login/css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- //css files -->
-    <!-- web-fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
-    <!-- //web-fonts -->
 </head>
 
 <body>
