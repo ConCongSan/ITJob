@@ -24,8 +24,6 @@ Route::post('/user_login',[HomeController::class,'handle_login'])->name('.handle
 Route::get('/user_register',[HomeController::class,'register'])->name('user_Register');
 Route::post('/user_register',[HomeController::class,'handle_register'])->name('.handle-Register');
 
-
-
 Route::get('/login-google/{provider}',[HomeController::class,'redirect_Google'])->name('LoginGoogle');
 Route::get('/callback/{provider}',[HomeController::class,'callback_Google'])->name('Callback');
 
