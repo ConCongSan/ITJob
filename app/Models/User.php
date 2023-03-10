@@ -9,6 +9,11 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Sanctum\HasApiTokens;
 
+/**
+ * @method static where(string $string, $email)
+ * @method static orderBy(string $string, string $string1)
+ * @method static find($id)
+ */
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;

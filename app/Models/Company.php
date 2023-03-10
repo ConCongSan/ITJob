@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static orderBy(string $string, string $string1)
  * @method static find($id)
  */
-class Tag extends Model
+class Company extends Model
 {
     use HasFactory;
 }
