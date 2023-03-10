@@ -32,9 +32,9 @@ return [
     ],
 
     'google' => [
-        'client_id' => '171803658583-tg4nvqt36aiihhn6ajr0aqsqrpau125l.apps.googleusercontent.com',
-        'client_secret' => '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',
-        'redirect' => 'http://127.0.0.1:8000/callback/Google',
+        'client_id' => '499019326539-0ep8q6q66bctekaa2lihk05n5ejgk2p4.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://itjob.vn/callback/Google',
     ],
 
     'facebook' => [
@@ -42,4 +42,5 @@ return [
         'client_secret' => '20b9ae17da03147085994fe3b26ca1db',
         'redirect' => 'http://127.0.0.1:8000/callback-facebook/Facebook',
     ],
+
 ];

@@ -2,28 +2,33 @@
 namespace App\Repositories;
 
 use App\Interfaces\ICompanyRepository;
+use App\Models\Company;
 
-class CompannyRepository implements ICompanyRepository
+class CompanyRepository implements ICompanyRepository
 {
 
     public function all()
     {
-        // TODO: Implement all() method.
+        return Company::orderBy('id','DESC')->paginate(8);
     }
 
     public function create(array $company)
     {
-        // TODO: Implement create() method.
+        $data = new Company();
+        $data->name = $company['name'];
+
+        $data->save();
+        return $data;
     }
 
     public function find($id)
     {
-        // TODO: Implement find() method.
+        return Company::find($id);
     }
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
+        return Company::find($id)->delete();
     }
 }
 

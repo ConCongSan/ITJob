@@ -1,21 +1,41 @@
 <?php
 
-namespace App\Repositories\Auth;
+namespace App\Repositories;
 
+use App\Interfaces\IUserRepository;
 use App\Models\Post;
 use App\Models\User;
-use App\Repositories\BaseRepository;
 
-class UserRepository extends BaseRepository implements IUserRepository
+class UserRepository implements IUserRepository
 {
-    public function getModel(): string
+
+    public function all()
     {
-        return User::class;
+        return User::orderBy('id','DESC')->paginate(8);
     }
 
-    public function deleteAll($id)
+    public function create($data)
     {
-        $post = Post::find($id);
-        return $post->post()->delete();
+        // TODO: Implement create() method.
+    }
+
+    public function find($id)
+    {
+        return User::find($id);
+    }
+
+    public function delete($id)
+    {
+        return User::find($id)->delete();
+    }
+
+    public function findEmail($email)
+    {
+        $isExist = User::where('email', $email)->first();
+        if (empty($isExist)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
